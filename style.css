@@ -116,11 +116,10 @@ section {
     padding-bottom: 100px;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('./images/activation.jpg'); /* Degradado + Imagen */
-    background-size: cover; /* Asegura que la imagen cubra toda la sección */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: var(--color-white); /* Asegura que el texto sea blanco */
+    background-image: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('./images/activation.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: var(--color-white); /
 }
 .hero-content {
     display: flex;
@@ -150,10 +149,10 @@ section {
 .hero-image {
     margin-top: 40px;
     width: 100%;
-    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 12px; /* Opcional: bordes redondeados */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+    max-width: 600px;
+    height: auto; 
+    border-radius: 12px; 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); 
 }
 .value-prop {
     padding: 100px 0;
@@ -187,14 +186,14 @@ section {
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
-/* Imágenes de fondo para las características de la sección "Empresas" */
+
 #empresas .feature:nth-child(1) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/activation.jpg'); /* Degradado + Imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/activation.jpg');
 }
 
 #empresas .feature:nth-child(2) {
