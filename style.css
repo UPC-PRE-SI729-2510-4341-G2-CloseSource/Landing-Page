@@ -116,10 +116,11 @@ section {
     padding-bottom: 100px;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('./images/activation.jpg'); 
+    background-image: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)), url('./images/activation.jpg');
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    color: var(--color-white); /
+    color: var(--color-white); 
 }
 .hero-content {
     display: flex;
