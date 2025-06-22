@@ -9,3 +9,7 @@ Este es el landing page del Grupo 2, CloseSource, del curso Desarrollo de Aplica
 * **U202318814 \- Castañeda Llanos, Kevin Alexander**
 * **U202113432 \- La Madrid Lozano, Ivan Jeanpierre**
 * **U201314454 \- Paitan Pumacahua, Max Anthony**
+
+
+LINK DEL LANDING PAGE : https://upc-pre-si729-2510-4341-g2-closesource.github.io/Landing-Page/
+
