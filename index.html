@@ -8,35 +8,122 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <a href="#inicio" class="logo">
-                <img src="./images/logo_nombre.PNG" alt="Logo">
-            </a>
-            <button class="mobile-toggle" id="mobileToggle">
-                ☰
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#empresas">Empresas</a></li>
-                <li><a href="#productoras">Productoras</a></li>
-                <li><a href="#como-funciona">Cómo Funciona</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#" class="btn btn-secondary" id="loginBtn">Iniciar Sesión</a></li>
-            </ul>
+        <nav class="navbar">
+        <div class="navbar-container">
+                <a href="#inicio" class="logo">
+                    <span class="logo-text">MatchEvent</span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#empresas" class="nav-link">Empresas</a></li>
+                    <li><a href="#productoras" class="nav-link">Productoras</a></li>
+                    <li><a href="#como-funciona" class="nav-link">Cómo Funciona</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#" class="btn btn-login" id="loginBtn">
+                        <span>Iniciar Sesión</span>
+                        <div class="btn-shine"></div>
+                    </a></li>
+                </ul>
         </div>
     </nav>
 
+    <!-- HERO SECTION MEJORADO -->
     <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
         <div class="container hero-content">
-            <h1>Conecta con las mejores productoras para tus activaciones de marca</h1>
-            <p>Simplificamos la contratación de servicios de producción para empresas y expandimos la visibilidad de productoras especializadas.</p>
-            <div class="hero-buttons">
-                <a href="#empresas" class="btn btn-primary">Buscar Productores para mi Activación</a>
-                <a href="#productoras" class="btn btn-secondary">Registra tu Empresa de Producción</a>
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span>🚀 Plataforma #1 en Conexiones</span>
+                </div>
+                <h1 class="hero-title">
+                    Conecta con las 
+                    <span class="highlight">mejores productoras</span> 
+                    para tus activaciones de marca
+                </h1>
+                <p class="hero-subtitle">
+                    Simplificamos la contratación de servicios de producción para empresas y expandimos la visibilidad de productoras especializadas en marketing experiencial.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-hero-number">500+</span>
+                        <span class="stat-hero-label">Productoras</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-hero-number">1.2K+</span>
+                        <span class="stat-hero-label">Proyectos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-hero-number">95%</span>
+                        <span class="stat-hero-label">Satisfacción</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#empresas" class="btn btn-primary">
+                        <span>Buscar Productores</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                    <a href="#productoras" class="btn btn-secondary">
+                        <span>Registra tu Empresa</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span>Confían en nosotros:</span>
+                    <div class="trust-logos">
+                        <div class="trust-logo">TechCorp</div>
+                        <div class="trust-logo">EventPro</div>
+                        <div class="trust-logo">InnovateCorp</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card floating">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span>Proyecto en curso</span>
+                    </div>
+                </div>
+                
+                <div class="hero-card floating-delayed">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <span>Matches</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="match-list">
+                            <div class="match-item"></div>
+                            <div class="match-item"></div>
+                            <div class="match-item"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-decoration">
+                    <div class="decoration-circle circle-1"></div>
+                    <div class="decoration-circle circle-2"></div>
+                    <div class="decoration-circle circle-3"></div>
+                </div>
             </div>
         </div>
+
     </section>
+
 
     <section class="value-prop" id="empresas">
         <div class="container">
@@ -116,11 +203,11 @@
         </div>
     </section>
 
-    <section class="how-it-works" id="como-funciona">
+        <section class="how-it-works" id="como-funciona">
         <div class="container">
             <div class="how-it-works-header">
                 <h2>Así de fácil es conectar y colaborar</h2>
-                <p>Un proceso simple diseñado para facilitar la colaboración entre empresas y productoras.</p>
+                <p>Un proceso simple diseñado para facilitar la colaboración entre empresas y productoras de manera eficiente y transparente.</p>
             </div>
             <div class="process-container">
                 <div class="process-column">
@@ -130,28 +217,28 @@
                             <div class="step-number">1</div>
                             <div class="step-content">
                                 <h4>Regístrate (opcional)</h4>
-                                <p>Crea una cuenta para guardar tus búsquedas y gestionar tus proyectos, o explora sin registro.</p>
+                                <p>Crea una cuenta para guardar tus búsquedas y gestionar tus proyectos, o explora sin registro para conocer las opciones disponibles.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">2</div>
                             <div class="step-content">
                                 <h4>Busca productoras</h4>
-                                <p>Filtra por tipo de servicio, ubicación, presupuesto y experiencia según tus necesidades.</p>
+                                <p>Filtra por tipo de servicio, ubicación, presupuesto y experiencia según tus necesidades específicas de proyecto.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">3</div>
                             <div class="step-content">
                                 <h4>Contacta y solicita propuestas</h4>
-                                <p>Comunícate directamente con las productoras seleccionadas y recibe propuestas detalladas.</p>
+                                <p>Comunícate directamente con las productoras seleccionadas y recibe propuestas detalladas adaptadas a tu proyecto.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">4</div>
                             <div class="step-content">
                                 <h4>Elige la mejor opción</h4>
-                                <p>Selecciona la productora que mejor se adapte a tus necesidades y comienza la colaboración.</p>
+                                <p>Selecciona la productora que mejor se adapte a tus necesidades y comienza la colaboración de forma inmediata.</p>
                             </div>
                         </div>
                     </div>
@@ -163,28 +250,28 @@
                             <div class="step-number">1</div>
                             <div class="step-content">
                                 <h4>Crea tu perfil detallado</h4>
-                                <p>Regístrate y completa tu perfil con información relevante sobre tu empresa y servicios.</p>
+                                <p>Regístrate y completa tu perfil con información relevante sobre tu empresa, servicios y áreas de especialización.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">2</div>
                             <div class="step-content">
                                 <h4>Muestra tus servicios y portafolio</h4>
-                                <p>Destaca tus especialidades y comparte ejemplos de trabajos anteriores para atraer clientes.</p>
+                                <p>Destaca tus especialidades y comparte ejemplos de trabajos anteriores para atraer a los clientes ideales.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">3</div>
                             <div class="step-content">
                                 <h4>Recibe solicitudes de empresas</h4>
-                                <p>Recibe notificaciones cuando empresas estén interesadas en los servicios que ofreces.</p>
+                                <p>Recibe notificaciones en tiempo real cuando empresas estén interesadas en los servicios que ofreces.</p>
                             </div>
                         </div>
                         <div class="step">
                             <div class="step-number">4</div>
                             <div class="step-content">
                                 <h4>Envía propuestas y gestiona proyectos</h4>
-                                <p>Presenta tus propuestas personalizadas y gestiona tus proyectos desde el panel de control.</p>
+                                <p>Presenta tus propuestas personalizadas y gestiona todos tus proyectos desde el panel de control integrado.</p>
                             </div>
                         </div>
                     </div>
@@ -192,6 +279,135 @@
             </div>
         </div>
     </section>
+
+<!-- PROOF SECTION -->
+<section class="proof-section">
+    <div class="container">
+        <div class="proof-header">
+            <h2>Confían en nosotros</h2>
+            <p>Empresas líderes y productoras especializadas ya forman parte de nuestra plataforma</p>
+        </div>
+        
+        <!-- Estadísticas -->
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Productoras registradas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1200+</div>
+                <div class="stat-label">Proyectos completados</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">Empresas conectadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Satisfacción del cliente</div>
+            </div>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"MatchEvent nos permitió encontrar la productora perfecta para nuestro lanzamiento de producto. El proceso fue increíblemente eficiente."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h5>María González</h5>
+                        <span>Marketing Manager - TechCorp</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Desde que nos registramos, hemos triplicado nuestros clientes. La plataforma realmente conecta con las empresas adecuadas."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h5>Carlos Mendoza</h5>
+                        <span>Director - EventPro Productions</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"La facilidad para gestionar múltiples proyectos desde un solo lugar ha transformado nuestra forma de trabajar."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h5>Ana Ruiz</h5>
+                        <span>Brand Manager - InnovateCorp</span>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+
+<!-- APP GALLERY SECTION -->
+<section class="app-gallery">
+    <div class="container">
+        <div class="gallery-header">
+            <h2>Conoce nuestra plataforma</h2>
+            <p>Una interfaz intuitiva diseñada para hacer que conectar sea más fácil que nunca</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item main-feature">
+                <img src="images/match-4.png" alt="Propuestas">
+                <div class="gallery-overlay">
+                    <h4>Mira propuestas</h4>
+                    <p>Mira las propuestas que envias</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/match-5.png" alt="Búsqueda de productoras">
+                <div class="gallery-overlay">
+                    <h4>Edita propuestas</h4>
+                    <p>Edita las propuestas que envies</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/match-6.png" alt="Perfil de productora">
+                <div class="gallery-overlay">
+                    <h4>Elimina propuestas</h4>
+                    <p>Elimina las propuestas que ya no desees enviar</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/match-3.png" alt="Sistema de mensajería">
+                <div class="gallery-overlay">
+                    <h4>Comunicación Directa</h4>
+                    <p>Chat integrado para comunicarte sin complicaciones</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/match-1.png" alt="Backend">
+                <div class="gallery-overlay">
+                    <h4>Muchas posibilidades</h4>
+                    <p>Muchas posibilidades en la búsqueda de servicios</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/match-2.png" alt="oportunidades">
+                <div class="gallery-overlay">
+                    <h4>Oportunidas de propuestas</h4>
+                    <p>Mira una lista de oportunidades de propuestas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section class="about-us" id="nosotros">
         <div class="container">
