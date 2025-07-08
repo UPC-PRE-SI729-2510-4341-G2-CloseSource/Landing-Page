@@ -1883,25 +1883,67 @@ section {
     }
 }
 
-/* --- FIX NAV RESPONSIVE --- */
+
 .navbar{
-  position: fixed;          /* la hace flotante y crea stacking context  */
+  position: fixed;        
   top: 0; left: 0; right: 0;
   width: 100%;
-  z-index: 2000;            /* por encima de todo el contenido */
+  z-index: 2000;         
 }
 
-.nav-links{                 /* panel que se despliega */
-  z-index: 2001;            /* un punto más alto que .navbar */
-  overflow-y: auto;         /* por si agregas más enlaces */
+.nav-links{               
+  z-index: 2001;          
+  overflow-y: auto;       
 }
 
-/* Pequeña mejora opcional: usa transform para el slide-in */
+
 @media (max-width: 768px){
   .nav-links{
-    left: 0;                         /* ya no necesitamos -100% */
+    left: 0;                         
     transform: translateX(-100%);
-    transition: transform .35s ease; /* animación más fluida   */
+    transition: transform .35s ease; 
   }
   .nav-links.active{ transform: translateX(0); }
+}
+
+
+.about-product, .about-team {
+    padding: 100px 0;
+    background: #f7f9fc;
+    text-align: center;
+}
+
+.about-product h2, .about-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+.about-product p, .about-team p {
+    font-size: 1.2rem;
+    color: #4B5563;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
